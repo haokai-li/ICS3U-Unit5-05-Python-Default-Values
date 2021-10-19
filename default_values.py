@@ -2,7 +2,7 @@
 
 # Created by: Haokai Li
 # Created on: Oct 2021
-# This Program is about affress
+# This Program is about address
 
 
 def word_upper(
@@ -14,7 +14,7 @@ def word_upper(
     postal_code,
     apartment_number=None,
 ):
-    # This function is about affress
+    # This function is about address
 
     final_address = None
 
