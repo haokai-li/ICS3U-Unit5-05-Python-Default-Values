@@ -2,7 +2,7 @@
 
 # Created by: Haokai Li
 # Created on: Oct 2021
-# This Program calculates the volume of a cylinder
+# This Program is about affress
 
 
 def word_upper(
@@ -14,7 +14,7 @@ def word_upper(
     postal_code,
     apartment_number=None,
 ):
-    # This function calculates the volume of a cylinder
+    # This function is about affress
 
     final_address = None
 
@@ -29,24 +29,30 @@ def word_upper(
         final_address = (
             full_name_upper
             + "\n"
-            + apartment_number
+            + str(apartment_number)
             + "-"
-            + street_number
+            + str(street_number)
+            + " "
             + street_type_upper
             + "\n"
             + city_upper
+            + " "
             + province_upper
+            + " "
             + postal_code_upper
         )
     else:
         final_address = (
             full_name_upper
             + "\n"
-            + street_number
+            + str(street_number)
+            + " "
             + street_type_upper
             + "\n"
             + city_upper
+            + " "
             + province_upper
+            + " "
             + postal_code_upper
         )
 
@@ -90,26 +96,26 @@ def main():
         # call functions
         if user_apartment_string != None:
             final_upper = word_upper(
-                user_full_name_string,
-                user_street_number,
-                user_street_type_string,
-                user_city_string,
-                user_province_string,
-                user_postal_code_string,
-                user_apartment_number,
+                full_name=user_full_name_string,
+                street_number=user_street_number,
+                street_type=user_street_type_string,
+                city=user_city_string,
+                province=user_province_string,
+                postal_code=user_postal_code_string,
+                apartment_number=user_apartment_number,
             )
         else:
             final_upper = word_upper(
-                user_full_name_string,
-                user_street_number,
-                user_street_type_string,
-                user_city_string,
-                user_province_string,
-                user_postal_code_string,
+                full_name=user_full_name_string,
+                street_number=user_street_number,
+                street_type=user_street_type_string,
+                city=user_city_string,
+                province=user_province_string,
+                postal_code=user_postal_code_string,
             )
 
         # output
-        print("{}".format(final_upper))
+        print(final_upper)
 
     except Exception:
         # output
