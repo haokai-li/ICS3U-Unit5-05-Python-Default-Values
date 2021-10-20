@@ -38,7 +38,7 @@ def word_upper(
             + city_upper
             + " "
             + province_upper
-            + " "
+            + "  "
             + postal_code_upper
         )
     else:
@@ -52,7 +52,7 @@ def word_upper(
             + city_upper
             + " "
             + province_upper
-            + " "
+            + "  "
             + postal_code_upper
         )
 
@@ -119,7 +119,7 @@ def main():
 
     except Exception:
         # output
-        print("You didn't enter an integer.")
+        print("You have an error input.")
 
     print("\nDone.")
 
