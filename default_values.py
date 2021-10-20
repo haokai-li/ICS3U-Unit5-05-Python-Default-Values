@@ -25,7 +25,7 @@ def word_upper(
     province_upper = province.upper()
     postal_code_upper = postal_code.upper()
 
-    if apartment_number != None:
+    if apartment_number is not None:
         final_address = (
             full_name_upper
             + "\n"
@@ -94,7 +94,7 @@ def main():
         user_street_number = int(user_street_string)
 
         # call functions
-        if user_apartment_string != None:
+        if user_apartment_string is not None:
             final_upper = word_upper(
                 full_name=user_full_name_string,
                 street_number=user_street_number,
